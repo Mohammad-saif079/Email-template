@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Code</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Inter";
+        }
+
+        .hero {
+            position: relative;
+            top: 17px;
+            scale: 1.2;
+
+        }
+
+        body {
+            width: 100vw;
+            height: 100svh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f4f4f7;
+        }
+
+        .cardmsg {
+            width: 60vw;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .message {
+            width: 100%;
+            padding: 14px;
+        }
+
+        .message>h1 {
+            font-weight: 600;
+            font-size: 28px;
+
+        }
+
+        .message>p {
+            width: 100%;
+            
+
+            color: #333333;
+        }
+
+        .dev {
+            text-decoration: none;
+            color: #892CDC;
+        }
+
+        .header {
+            padding: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: #2B2E3A;
+
+        }
+
+        .otpsection {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 16px;
+        }
+
+        .digit {
+            font-size: 28px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+            width: 50px;
+            height: 50px;
+            background-color: #F9F4FD;
+            border-radius: 10px;
+        }
+        .cardmsg>p{
+            color: #333333;
+            text-align: center;
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cardmsg">
+
+        <div class="header">
+            <div class="hero">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="220" viewBox="0 0 367 324" fill="none">
+                    <path
+                        d="M183.255 84.8383V258.888M42.0522 22.9606V194.189L183.248 258.888L324.925 194.204V22.1119L183.248 84.8383L42.0522 22.9606Z"
+                        stroke="#3F4354" stroke-width="5.59375" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M324.947 108.158L183.27 171.863L42.0745 108.586M112.645 53.9034V226.539M254.086 53.4828V226.546"
+                        stroke="#3F4354" stroke-width="5.59375" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+            </div>
+
+
+        </div>
+
+        <div class="message">
+            <h1>Hi Name,</h1>
+            <br>
+            <p>Here is your One Time Password (OTP).
+                Please enter this code to verify your email address for Chess
+            </p>
+            <div class="otpsection">
+                <div class="digit">9</div>
+                <div class="digit">9</div>
+                <div class="digit">9</div>
+                <div class="digit">9</div>
+
+
+
+            </div>
+            <p>OTP will expire in <b>5 minutes.</b></p>
+            <br>
+            <p>Best Regards,</p>
+            <a class="dev" href="#">CHESS developer</a>
+
+        </div>
+
+
+        <div class="socials">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 52 52" fill="none">
+                <path
+                    d="M46.9334 25.6C46.9334 13.824 37.3761 4.26667 25.6001 4.26667C13.8241 4.26667 4.26672 13.824 4.26672 25.6C4.26672 35.9253 11.6054 44.5227 21.3334 46.5067V32H17.0667V25.6H21.3334V20.2667C21.3334 16.1493 24.6827 12.8 28.8001 12.8H34.1334V19.2H29.8667C28.6934 19.2 27.7334 20.16 27.7334 21.3333V25.6H34.1334V32H27.7334V46.8267C38.5067 45.76 46.9334 36.672 46.9334 25.6Z"
+                    fill="#2B2E3A" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 52 52" fill="none">
+                <path
+                    d="M16.6401 4.26666H34.5601C41.3867 4.26666 46.9334 9.81333 46.9334 16.64V34.56C46.9334 37.8416 45.6298 40.9888 43.3093 43.3093C40.9889 45.6297 37.8417 46.9333 34.5601 46.9333H16.6401C9.81339 46.9333 4.26672 41.3867 4.26672 34.56V16.64C4.26672 13.3584 5.57034 10.2112 7.89079 7.89073C10.2112 5.57028 13.3584 4.26666 16.6401 4.26666ZM16.2134 8.53333C14.1765 8.53333 12.2231 9.34247 10.7828 10.7827C9.34253 12.223 8.53339 14.1765 8.53339 16.2133V34.9867C8.53339 39.232 11.9681 42.6667 16.2134 42.6667H34.9867C37.0236 42.6667 38.977 41.8575 40.4173 40.4172C41.8576 38.977 42.6667 37.0235 42.6667 34.9867V16.2133C42.6667 11.968 39.2321 8.53333 34.9867 8.53333H16.2134ZM36.8001 11.7333C37.5073 11.7333 38.1856 12.0143 38.6857 12.5144C39.1858 13.0145 39.4667 13.6928 39.4667 14.4C39.4667 15.1072 39.1858 15.7855 38.6857 16.2856C38.1856 16.7857 37.5073 17.0667 36.8001 17.0667C36.0928 17.0667 35.4145 16.7857 34.9144 16.2856C34.4143 15.7855 34.1334 15.1072 34.1334 14.4C34.1334 13.6928 34.4143 13.0145 34.9144 12.5144C35.4145 12.0143 36.0928 11.7333 36.8001 11.7333ZM25.6001 14.9333C28.429 14.9333 31.1421 16.0571 33.1425 18.0575C35.1429 20.0579 36.2667 22.771 36.2667 25.6C36.2667 28.429 35.1429 31.1421 33.1425 33.1425C31.1421 35.1429 28.429 36.2667 25.6001 36.2667C22.7711 36.2667 20.058 35.1429 18.0576 33.1425C16.0572 31.1421 14.9334 28.429 14.9334 25.6C14.9334 22.771 16.0572 20.0579 18.0576 18.0575C20.058 16.0571 22.7711 14.9333 25.6001 14.9333ZM25.6001 19.2C23.9027 19.2 22.2748 19.8743 21.0746 21.0745C19.8743 22.2747 19.2001 23.9026 19.2001 25.6C19.2001 27.2974 19.8743 28.9252 21.0746 30.1255C22.2748 31.3257 23.9027 32 25.6001 32C27.2974 32 28.9253 31.3257 30.1255 30.1255C31.3258 28.9252 32.0001 27.2974 32.0001 25.6C32.0001 23.9026 31.3258 22.2747 30.1255 21.0745C28.9253 19.8743 27.2974 19.2 25.6001 19.2Z"
+                    fill="#2B2E3A" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 52 52" fill="none">
+                <path
+                    d="M21.3333 32L32.4053 25.6L21.3333 19.2V32ZM45.9946 15.296C46.2719 16.2987 46.4639 17.6427 46.5919 19.3493C46.7413 21.056 46.8053 22.528 46.8053 23.808L46.9333 25.6C46.9333 30.272 46.5919 33.7067 45.9946 35.904C45.4613 37.824 44.2239 39.0613 42.3039 39.5947C41.3013 39.872 39.4666 40.064 36.6506 40.192C33.8773 40.3413 31.3386 40.4053 28.9919 40.4053L25.5999 40.5333C16.6613 40.5333 11.0933 40.192 8.89594 39.5947C6.97594 39.0613 5.7386 37.824 5.20527 35.904C4.92794 34.9013 4.73594 33.5573 4.60794 31.8507C4.4586 30.144 4.3946 28.672 4.3946 27.392L4.2666 25.6C4.2666 20.928 4.60794 17.4933 5.20527 15.296C5.7386 13.376 6.97594 12.1387 8.89594 11.6053C9.8986 11.328 11.7333 11.136 14.5493 11.008C17.3226 10.8587 19.8613 10.7947 22.2079 10.7947L25.5999 10.6667C34.5386 10.6667 40.1066 11.008 42.3039 11.6053C44.2239 12.1387 45.4613 13.376 45.9946 15.296Z"
+                    fill="#2B2E3A" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="26"  viewBox="0 0 32 32" fill="none">
+                <mask id="mask0_113_56" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="32"
+                    height="32">
+                    <path d="M0 0H32V32H0V0Z" fill="white" />
+                </mask>
+                <g mask="url(#mask0_113_56)">
+                    <path
+                        d="M25.2 1.49942H30.1074L19.3874 13.7828L32 30.5006H22.1257L14.3863 20.3634L5.54057 30.5006H0.628571L12.0937 17.3577L0 1.50171H10.1257L17.1109 10.7657L25.2 1.49942ZM23.4743 27.5566H26.1943L8.64 4.29028H5.72343L23.4743 27.5566Z"
+                        fill="#2B2E3A" />
+                </g>
+            </svg>
+
+
+        </div>
+
+        <br>
+
+         <p>
+            &copy; 2026 CHESS. All rights reserved.
+         </p>
+
+        <br>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

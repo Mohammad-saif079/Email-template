@@ -1,2 +1,2 @@
-# Email-template
-A Email Template built in HTML for OTP message
+# Email Template for Verification Code
+A Email Template built in HTML for OTP message 
